@@ -1,0 +1,11 @@
+{
+  "name": "unit-test-basic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "yogjin <youngjin988@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3"
+  }
+}
