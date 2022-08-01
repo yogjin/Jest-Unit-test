@@ -24,10 +24,17 @@ describe('Calculator', () => {
   });
 
   // add(num)
-  it('add', () => {
-    calculator.set(1);
-    calculator.add(1);
-    expect(calculator.value).toBe(2);
+  describe('add', () => {
+    it('default', () => {
+      calculator.set(1);
+      calculator.add(1);
+      expect(calculator.value).toBe(2);
+    });
+    it('value can not be greater than 100', () => {
+      expect(() => {
+        calculator.add(101);
+      }).toThrow('Value can not be greater than 100');
+    });
   });
 
   // substract(num)
